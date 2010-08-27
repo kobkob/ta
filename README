@@ -1,0 +1,28 @@
+TAnoBrasil.com.br
+
+- Website de informações turísticas e gastronômicas de todo o Brasil
+- Reservas on line (hotéis e restaurantes)
+- Mapas on-line do estabelecimento
+- Divulgação do estabelecimento no cotexto dos pontos turísticos próximos
+- Website exclusivo do estabelecimento em domínio próprio
+- Automação (ERP, CRM, Ponto de Venda, Cardápio Eletrônico)
+
+
+arquivos importantes
+system/application/controlers/welcome.php
+system/application/controlers/taonde.php
+system/application/views/welcome_message.php
+system/application/views/taonde.php
+
+A fazer:
+- Administracao
+system/application/controlers/admin.php
+system/application/views/admin.php
+
+= idem cadastro, reservas, etc ... o\_
+
+
+Obrigado pela sua contribuição!
+\o/
+
+
