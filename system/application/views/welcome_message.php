@@ -50,17 +50,7 @@ $(function(){
    $('#janela').dialog({
        autoOpen: false,
        width: 600,
-   /*    buttons: {
-           "Ok": function() { 
-                   $(this).dialog("close"); 
-           }, 
-           "Cancel": function() { 
-                   $(this).dialog("close"); 
-           } 
-       }
-   */
    });
-   //$('#janela').onclose(function(e){janelaAberta = 0;})
 });
 ////////////////////////////////////////////////////////
 /** inicia o site TAnoBrasil.com/taonde
@@ -97,10 +87,6 @@ function fechaJanela(){
    $('#janela').dialog('close');
 }
 
-/*$("#body").mousemove(function(e){
-    toggleJanela();
-});
-*/
 //////////////////////////////////////////////////////////
 </script>
 </head>
