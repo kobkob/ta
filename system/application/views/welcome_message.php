@@ -51,7 +51,7 @@ code {
   z-index: 99;
   bottom:  0px;
   width:   100%;
-  height:  130px;
+  height:  180px;
   background: #1a1a1a ;
   color: #ffffff;
   font: 90px  "Arial" , sans-serif;
@@ -130,8 +130,10 @@ function abreJanela(){
 }
 
 function fechaJanela(){
+    if (janelaAberta){
    janelaAberta = 0;
    $('#janela').dialog('close');
+    }
 }
 
 function pageWidth() {
@@ -168,7 +170,7 @@ function posBottom() {
 <div id='bodyContainer'>
 <center>
 <iframe id='bodyFrame'
-   src="http://www.panoramio.com/wapi/template/slideshow.html?width=1024&amp;height=768&amp;tag=brasil"
+   src="http://www.panoramio.com/wapi/template/slideshow.html?width=640&amp;height=480&amp;tag=brasil"
    frameborder="0" width="100%" height="100%" scrolling="no" marginwidth="0" marginheight="0" align="center">
 </iframe>
 </center>
@@ -177,7 +179,7 @@ function posBottom() {
 <?php
 ?>
 <div id='janela'>
-<p align='center'>Taonde? <input id='taonde' onchange='//pleaseOnde();'><button onclick='pleaseOnde();'>:)</button>
+<p align='center'>Taonde? <input id='taonde' onfocus='janelaAberta=0;' onblur='janelaAberta=1;' onChange='pleaseOnde();'><button onclick='pleaseOnde();'>:)</button>
 </div>
 <div id='taqui'>Resultados</div>
 <div id='tacumfome'>Restaurantes</div>

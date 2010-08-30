@@ -15,7 +15,12 @@ system/application/views/welcome_message.php
 system/application/views/taonde.php
 
 A fazer:
+
+- Resolver janela de busca
+   a janela não pode fechar enquanto se está digitando
+
 - Administracao
+   criar controllers e views
 system/application/controlers/admin.php
 system/application/views/admin.php
 
