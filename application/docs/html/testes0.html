@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>ta: Testes básicos</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Gerado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li class="current"><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;<u>S</u>earch&nbsp;for&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1><a class="anchor" name="testes0">Testes básicos </a></h1><a href="/ta/?/welcome/tests">Realizar os testes</a><p>
+<a href="/ta/docs/00__load_8t_8php.html">Ver os testes</a><h2><a class="anchor" name="sec1">
+Pode carregar o controle taonde</a></h2>
+Carregamos o taonde com <code>new</code> <code>Taonde()</code>;<p>
+A melhor forma de garantirmos a presença do objeto do tipo Controller será testar a presença do router testando a existencia de<p>
+<code>$taonde-&gt;router-&gt;method</code>;<p>
+<a class="el" href="class_taonde.html" title="Cotrolador para buscas.">Taonde</a> comporta 2 metodos:<ol type=1>
+<li>restaurantes, que busca restaurantes</li><li>taqui, que busca hotéis e pontos turísticos</li></ol>
+<h2><a class="anchor" name="sec2">
+Pode usar o metodo restaurantes</a></h2>
+<a class="el" href="class_taonde.html#249d2297921cbdeb4ac155fa73ebe0bf" title="Controlador para a busca em restaurantes.">Taonde::restaurantes()</a><p>
+A melhor forma de provar a chamada do metodo é testar o retorno com uma chamada de resposta conhecida Chamado-se o metodo com a chave <code>'Brasil'</code> devera retornar <code>'comer</code> <code>Brasil'</code> <h2><a class="anchor" name="sec3">
+Pode usar o metodo taqui</a></h2>
+A melhor forma de provar a chamada do metodo é testar o retorno com uma chamada de resposta conhecida Chamado-se o metodo com a chave 'Brasil' devera retornar <code>'buscar</code> <code>Brasil'</code> <h2><a class="anchor" name="sec4">
+Pode carregar o controle admin</a></h2>
+Carregamos o admin com <code>new</code> <code>Admin()</code>;<p>
+A melhor forma de garantirmos a presença do objeto do tipo Controller será testar a presença do router testando a existencia de<p>
+<code>$admin-&gt;router-&gt;method</code>;<p>
+<a class="el" href="class_admin.html" title="Cotrolador para.">Admin</a> comporta 6 métodos<ol type=1>
+<li>usuários,</li><li>pontos turísticos,</li><li>hotéis,</li><li>restaurantes,</li><li>patrocinadores e</li><li>parceiros </li></ol>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Gerado em Fri Sep 3 23:55:07 2010 para ta por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

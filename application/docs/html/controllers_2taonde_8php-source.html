@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>ta: /home/filipo/Projects/TIT/prototipos/0.1/ta/application/controllers/taonde.php Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Gerado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;<u>S</u>earch&nbsp;for&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;ficheiros</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<h1>/home/filipo/Projects/TIT/prototipos/0.1/ta/application/controllers/taonde.php</h1><a href="controllers_2taonde_8php.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 &lt;?php
+<a name="l00020"></a><a class="code" href="class_taonde.html">00020</a> <span class="keyword">class </span><a class="code" href="class_taonde.html" title="Cotrolador para buscas.">Taonde</a> <span class="keyword">extends</span> Controller {
+<a name="l00021"></a>00021  
+<a name="l00030"></a><a class="code" href="class_taonde.html#a53ca2c92e8cbe23254b0ad9d7e58697">00030</a>     function <a class="code" href="class_taonde.html#a53ca2c92e8cbe23254b0ad9d7e58697" title="Controlador default.">index</a>($coisa)
+<a name="l00031"></a>00031     {
+<a name="l00032"></a>00032         $this-&gt;load-&gt;view(<span class="stringliteral">'taonde'</span>);
+<a name="l00033"></a>00033     }
+<a name="l00034"></a>00034 
+<a name="l00038"></a><a class="code" href="class_taonde.html#249d2297921cbdeb4ac155fa73ebe0bf">00038</a>     function <a class="code" href="class_taonde.html#249d2297921cbdeb4ac155fa73ebe0bf" title="Controlador para a busca em restaurantes.">restaurantes</a>($coisa)
+<a name="l00039"></a>00039     {
+<a name="l00040"></a>00040             echo <span class="stringliteral">"$coisa. Que fome! Onde acho isto?"</span>;
+<a name="l00041"></a>00041             <span class="keywordflow">return</span> <span class="stringliteral">"comer "</span>.$coisa;
+<a name="l00042"></a>00042     }
+<a name="l00043"></a>00043 
+<a name="l00047"></a><a class="code" href="class_taonde.html#0e99e4fac9cdc3676bed2bcebe812571">00047</a>     function <a class="code" href="class_taonde.html#0e99e4fac9cdc3676bed2bcebe812571" title="Controlador para busca geral por palavra-chave.">taqui</a>($coisa)
+<a name="l00048"></a>00048     {
+<a name="l00049"></a>00049             echo <span class="stringliteral">"$coisa. Ta onde? Sei la!"</span>;
+<a name="l00050"></a>00050             <span class="keywordflow">return</span> <span class="stringliteral">"buscar "</span>.$coisa;
+<a name="l00051"></a>00051     }
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 }
+<a name="l00054"></a>00054 ?&gt;
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Gerado em Fri Sep 3 23:55:06 2010 para ta por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

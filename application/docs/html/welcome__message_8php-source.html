@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>ta: /home/filipo/Projects/TIT/prototipos/0.1/ta/application/views/welcome_message.php Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Gerado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;<u>S</u>earch&nbsp;for&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;ficheiros</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<h1>/home/filipo/Projects/TIT/prototipos/0.1/ta/application/views/welcome_message.php</h1><a href="welcome__message_8php.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 &lt;html&gt;
+<a name="l00002"></a>00002 &lt;head&gt;
+<a name="l00003"></a>00003 &lt;title&gt;TAnoBrasil.com.br&lt;/title&gt;
+<a name="l00004"></a>00004 
+<a name="l00005"></a>00005 &lt;style type=<span class="stringliteral">"text/css"</span>&gt;
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 body {
+<a name="l00008"></a>00008  background-color: #fff;
+<a name="l00009"></a>00009  margin: 40px;
+<a name="l00010"></a>00010  font-family: Lucida Grande, Verdana, Sans-serif;
+<a name="l00011"></a>00011  font-size: 14px;
+<a name="l00012"></a>00012  color: #4F5155;
+<a name="l00013"></a>00013 }
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 a {
+<a name="l00016"></a>00016  color: #003399;
+<a name="l00017"></a>00017  background-color: transparent;
+<a name="l00018"></a>00018  font-weight: normal;
+<a name="l00019"></a>00019 }
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021 h1 {
+<a name="l00022"></a>00022  color: #444;
+<a name="l00023"></a>00023  background-color: transparent;
+<a name="l00024"></a>00024  border-bottom: 1px solid #D0D0D0;
+<a name="l00025"></a>00025  font-size: 16px;
+<a name="l00026"></a>00026  font-weight: bold;
+<a name="l00027"></a>00027  margin: 24px 0 2px 0;
+<a name="l00028"></a>00028  padding: 5px 0 6px 0;
+<a name="l00029"></a>00029 }
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 code {
+<a name="l00032"></a>00032  font-family: Monaco, Verdana, Sans-serif;
+<a name="l00033"></a>00033  font-size: 12px;
+<a name="l00034"></a>00034  background-color: #f9f9f9;
+<a name="l00035"></a>00035  border: 1px solid #D0D0D0;
+<a name="l00036"></a>00036  color: #002166;
+<a name="l00037"></a>00037  display: block;
+<a name="l00038"></a>00038  margin: 14px 0 14px 0;
+<a name="l00039"></a>00039  padding: 12px 10px 12px 10px;
+<a name="l00040"></a>00040 }
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 <span class="preprocessor">#tacumfome {</span>
+<a name="l00043"></a>00043 <span class="preprocessor"></span>  visibility: hidden;
+<a name="l00044"></a>00044 }
+<a name="l00045"></a>00045 <span class="preprocessor">#taqui {</span>
+<a name="l00046"></a>00046 <span class="preprocessor"></span>  visibility: hidden;
+<a name="l00047"></a>00047 }
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 <span class="preprocessor">#tanobrasil {</span>
+<a name="l00050"></a>00050 <span class="preprocessor"></span>  position: absolute;
+<a name="l00051"></a>00051   z-index: 99;
+<a name="l00052"></a>00052   bottom:  0px;
+<a name="l00053"></a>00053   width:   100%;
+<a name="l00054"></a>00054   height:  180px;
+<a name="l00055"></a>00055   background: #1a1a1a ;
+<a name="l00056"></a>00056   color: #ffffff;
+<a name="l00057"></a>00057   font: 90px  <span class="stringliteral">"Arial"</span> , sans-serif;
+<a name="l00058"></a>00058   text-align: center;        
+<a name="l00059"></a>00059   filter:alpha(opacity=30); 
+<a name="l00060"></a>00060   -moz-opacity:0.3;
+<a name="l00061"></a>00061   opacity:0.3;
+<a name="l00062"></a>00062   left: 0px
+<a name="l00063"></a>00063 }
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065 <span class="preprocessor">#bodyContainer{</span>
+<a name="l00066"></a>00066 <span class="preprocessor"></span>  z-index: 2;
+<a name="l00067"></a>00067   width: 100%;
+<a name="l00068"></a>00068   height: 100%;
+<a name="l00069"></a>00069   position: absolute;
+<a name="l00070"></a>00070   top: 0px;
+<a name="l00071"></a>00071   overflow: hidden;
+<a name="l00072"></a>00072   <span class="comment">/*border: 2px solid  #68a91c;*/</span>
+<a name="l00073"></a>00073   left: 0px
+<a name="l00074"></a>00074 }
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077 &lt;/style&gt;
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 &lt;link type=<span class="stringliteral">"text/css"</span> href=<span class="stringliteral">"css/custom-theme/jquery-ui-1.8.4.custom.css"</span> rel=<span class="stringliteral">"stylesheet"</span> /&gt;    
+<a name="l00080"></a>00080 &lt;script type=<span class="stringliteral">"text/javascript"</span> src=<span class="stringliteral">"js/jquery-1.4.2.min.js"</span>&gt;&lt;/script&gt;
+<a name="l00081"></a>00081 &lt;script type=<span class="stringliteral">"text/javascript"</span> src=<span class="stringliteral">"js/jquery-ui-1.8.4.custom.min.js"</span>&gt;&lt;/script&gt;
+<a name="l00082"></a>00082 &lt;script type=<span class="stringliteral">"text/javascript"</span> src=<span class="stringliteral">"http://www.panoramio.com/wapi/wapi.js?v=1&amp;amp;hl=fr"</span>&gt;&lt;/script&gt;
+<a name="l00083"></a>00083 &lt;script src=<span class="stringliteral">"http://maps.google.com/maps?file=api&amp;amp;v=2&amp;amp;sensor=true&amp;amp;key=ABQIAAAAeQvcoXjifuXSGje-QnnCdBQUYnmzp9KQ61b_SwfTbZ1X7ZRusxSKYFdRWVjhwCgcCdzFIcPA34L_6A"</span> type=<span class="stringliteral">"text/javascript"</span>&gt;&lt;/script&gt;
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085 &lt;!-- Script tanobrasil.js --&gt;
+<a name="l00086"></a>00086 &lt;script type=<span class="stringliteral">"text/javascript"</span>&gt;
+<a name="l00087"></a>00087 $(function(){
+<a name="l00088"></a>00088    <span class="comment">// Dialog                       </span>
+<a name="l00089"></a>00089    $(<span class="stringliteral">'#janela'</span>).dialog({
+<a name="l00090"></a>00090        autoOpen: <span class="keyword">false</span>,
+<a name="l00091"></a>00091        width: 400,
+<a name="l00092"></a>00092    });
+<a name="l00093"></a>00093    var frW = pageWidth();
+<a name="l00094"></a>00094    var frH = pageHeight();
+<a name="l00095"></a>00095    $(<span class="stringliteral">'#bodyFrame'</span>).attr(<span class="stringliteral">'src'</span>, <span class="stringliteral">"http://www.panoramio.com/wapi/template/slideshow.html?width="</span>+frW+<span class="stringliteral">"&amp;amp;height="</span>+frH+<span class="stringliteral">"&amp;amp;tag=brasil"</span>);
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097 <span class="comment">/*</span>
+<a name="l00098"></a>00098 <span class="comment">   $('#fotos').load("http://www.panoramio.com/wapi/template/slideshow.html?width=1024&amp;amp;height=768&amp;amp;tag=brasil");</span>
+<a name="l00099"></a>00099 <span class="comment"> */</span>
+<a name="l00100"></a>00100 
+<a name="l00101"></a>00101 });
+<a name="l00103"></a>00103 
+<a name="l00106"></a>00106 function ondeQueTa(coisa)
+<a name="l00107"></a>00107 {
+<a name="l00108"></a>00108   <span class="comment">//console.log (coisa + "- onde?");</span>
+<a name="l00109"></a>00109   <span class="keywordflow">if</span> (!coisa) coisa = <span class="stringliteral">'brasil'</span>; 
+<a name="l00110"></a>00110   $(<span class="stringliteral">'#tacumfome'</span>).load(<span class="stringliteral">'?/taonde/restaurantes/'</span>+coisa);
+<a name="l00111"></a>00111   $(<span class="stringliteral">'#taqui'</span>).load(<span class="stringliteral">'?/taonde/taqui/'</span>+coisa);
+<a name="l00112"></a>00112   fechaJanela();
+<a name="l00113"></a>00113   console.log($(<span class="stringliteral">'#tacumfome'</span>));
+<a name="l00114"></a>00114 }
+<a name="l00115"></a>00115 
+<a name="l00116"></a>00116 function pleaseOnde()
+<a name="l00117"></a>00117 {
+<a name="l00118"></a>00118     var coisa = escape($(<span class="stringliteral">'#taonde'</span>).val());
+<a name="l00119"></a>00119     <span class="comment">//console.log (coisa);</span>
+<a name="l00120"></a>00120     ondeQueTa(coisa);
+<a name="l00121"></a>00121 }
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123 var janelaAberta=0;
+<a name="l00124"></a>00124 function abreJanela(){
+<a name="l00125"></a>00125    <span class="keywordflow">if</span> (!janelaAberta){
+<a name="l00126"></a>00126        $(<span class="stringliteral">'#janela'</span>).dialog(<span class="stringliteral">'open'</span>);
+<a name="l00127"></a>00127        janelaAberta++;
+<a name="l00128"></a>00128        setTimeout(<span class="stringliteral">"fechaJanela()"</span>,9000);
+<a name="l00129"></a>00129    }
+<a name="l00130"></a>00130 }
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132 function fechaJanela(){
+<a name="l00133"></a>00133     <span class="keywordflow">if</span> (janelaAberta){
+<a name="l00134"></a>00134    janelaAberta = 0;
+<a name="l00135"></a>00135    $(<span class="stringliteral">'#janela'</span>).dialog(<span class="stringliteral">'close'</span>);
+<a name="l00136"></a>00136     }
+<a name="l00137"></a>00137 }
+<a name="l00138"></a>00138 
+<a name="l00139"></a>00139 function pageWidth() {
+<a name="l00140"></a>00140     <span class="keywordflow">return</span> window.innerWidth != null? window.innerWidth : document.documentElement &amp;&amp; document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body != null ? document.body.clientWidth : null;
+<a name="l00141"></a>00141 } 
+<a name="l00142"></a>00142 
+<a name="l00143"></a>00143 function pageHeight() {
+<a name="l00144"></a>00144     <span class="keywordflow">return</span>  window.innerHeight != null? window.innerHeight : document.documentElement &amp;&amp; document.documentElement.clientHeight ?  document.documentElement.clientHeight : document.body != null? document.body.clientHeight : null;
+<a name="l00145"></a>00145 } 
+<a name="l00146"></a>00146 
+<a name="l00147"></a>00147 function posLeft() {
+<a name="l00148"></a>00148     <span class="keywordflow">return</span> typeof window.pageXOffset != <span class="stringliteral">'undefined'</span> ? window.pageXOffset :document.documentElement &amp;&amp; document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ? document.body.scrollLeft : 0;
+<a name="l00149"></a>00149 } 
+<a name="l00150"></a>00150 
+<a name="l00151"></a>00151 function posTop() {<span class="keywordflow">return</span> typeof window.pageYOffset != <span class="stringliteral">'undefined'</span> ?  window.pageYOffset : document.documentElement &amp;&amp; document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ? document.body.scrollTop : 0;
+<a name="l00152"></a>00152 } 
+<a name="l00153"></a>00153 
+<a name="l00154"></a>00154 function posRight() {
+<a name="l00155"></a>00155     <span class="keywordflow">return</span> posLeft()+pageWidth();
+<a name="l00156"></a>00156 } 
+<a name="l00157"></a>00157 
+<a name="l00158"></a>00158 function posBottom() {
+<a name="l00159"></a>00159     <span class="keywordflow">return</span> posTop()+pageHeight();
+<a name="l00160"></a>00160 }
+<a name="l00161"></a>00161 
+<a name="l00162"></a>00162 
+<a name="l00163"></a>00163 
+<a name="l00165"></a>00165 &lt;/script&gt;
+<a name="l00166"></a>00166 &lt;!-- fim tanobrasil.js --&gt;
+<a name="l00167"></a>00167 
+<a name="l00168"></a>00168 &lt;/head&gt;
+<a name="l00169"></a>00169 &lt;body onmousemove=<span class="stringliteral">"abreJanela();"</span>&gt;
+<a name="l00170"></a>00170 &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">'bodyContainer'</span>&gt;
+<a name="l00171"></a>00171 &lt;center&gt;
+<a name="l00172"></a>00172 &lt;iframe <span class="keywordtype">id</span>=<span class="stringliteral">'bodyFrame'</span>
+<a name="l00173"></a>00173    src=<span class="stringliteral">"http://www.panoramio.com/wapi/template/slideshow.html?width=640&amp;amp;height=480&amp;amp;tag=brasil"</span>
+<a name="l00174"></a>00174    frameborder=<span class="stringliteral">"0"</span> width=<span class="stringliteral">"100%"</span> height=<span class="stringliteral">"100%"</span> scrolling=<span class="stringliteral">"no"</span> marginwidth=<span class="stringliteral">"0"</span> marginheight=<span class="stringliteral">"0"</span> align=<span class="stringliteral">"center"</span>&gt;
+<a name="l00175"></a>00175 &lt;/iframe&gt;
+<a name="l00176"></a>00176 &lt;/center&gt;
+<a name="l00177"></a>00177 &lt;/div&gt;
+<a name="l00178"></a>00178 &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">'tanobrasil'</span>&gt;TAnoBrasil.com.br&lt;/div&gt;
+<a name="l00179"></a>00179 &lt;?php
+<a name="l00180"></a>00180 ?&gt;
+<a name="l00181"></a>00181 &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">'janela'</span>&gt;
+<a name="l00182"></a>00182 &lt;p align=<span class="stringliteral">'center'</span>&gt;<a class="code" href="class_taonde.html" title="Cotrolador para buscas.">Taonde</a>? &lt;input <span class="keywordtype">id</span>=<span class="stringliteral">'taonde'</span> onfocus=<span class="stringliteral">'janelaAberta=0;'</span> onblur=<span class="stringliteral">'janelaAberta=1;'</span> onChange=<span class="stringliteral">'pleaseOnde();'</span>&gt;&lt;button onclick=<span class="stringliteral">'pleaseOnde();'</span>&gt;:)&lt;/button&gt;
+<a name="l00183"></a>00183 &lt;/div&gt;
+<a name="l00184"></a>00184 &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">'taqui'</span>&gt;Resultados&lt;/div&gt;
+<a name="l00185"></a>00185 &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">'tacumfome'</span>&gt;Restaurantes&lt;/div&gt;
+<a name="l00186"></a>00186 &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">'fotos'</span>&gt;&lt;/div&gt;
+<a name="l00187"></a>00187 &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">'mapa'</span>&gt;&lt;/div&gt;
+<a name="l00188"></a>00188 &lt;!--
+<a name="l00189"></a>00189 --&gt;
+<a name="l00190"></a>00190 &lt;/body&gt;
+<a name="l00191"></a>00191 &lt;/html&gt;
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Gerado em Fri Sep 3 23:55:06 2010 para ta por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

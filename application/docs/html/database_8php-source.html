@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>ta: /home/filipo/Projects/TIT/prototipos/0.1/ta/application/config/database.php Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Gerado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;<u>S</u>earch&nbsp;for&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;ficheiros</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<h1>/home/filipo/Projects/TIT/prototipos/0.1/ta/application/config/database.php</h1><a href="database_8php.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 &lt;?php  <span class="keywordflow">if</span> ( ! defined(<span class="stringliteral">'BASEPATH'</span>)) exit(<span class="stringliteral">'No direct script access allowed'</span>);
+<a name="l00002"></a>00002 <span class="comment">/*</span>
+<a name="l00003"></a>00003 <span class="comment">| -------------------------------------------------------------------</span>
+<a name="l00004"></a>00004 <span class="comment">| DATABASE CONNECTIVITY SETTINGS</span>
+<a name="l00005"></a>00005 <span class="comment">| -------------------------------------------------------------------</span>
+<a name="l00006"></a>00006 <span class="comment">| This file will contain the settings needed to access your database.</span>
+<a name="l00007"></a>00007 <span class="comment">|</span>
+<a name="l00008"></a>00008 <span class="comment">| For complete instructions please consult the "Database Connection"</span>
+<a name="l00009"></a>00009 <span class="comment">| page of the User Guide.</span>
+<a name="l00010"></a>00010 <span class="comment">|</span>
+<a name="l00011"></a>00011 <span class="comment">| -------------------------------------------------------------------</span>
+<a name="l00012"></a>00012 <span class="comment">| EXPLANATION OF VARIABLES</span>
+<a name="l00013"></a>00013 <span class="comment">| -------------------------------------------------------------------</span>
+<a name="l00014"></a>00014 <span class="comment">|</span>
+<a name="l00015"></a>00015 <span class="comment">|       ['hostname'] The hostname of your database server.</span>
+<a name="l00016"></a>00016 <span class="comment">|       ['username'] The username used to connect to the database</span>
+<a name="l00017"></a>00017 <span class="comment">|       ['password'] The password used to connect to the database</span>
+<a name="l00018"></a>00018 <span class="comment">|       ['database'] The name of the database you want to connect to</span>
+<a name="l00019"></a>00019 <span class="comment">|       ['dbdriver'] The database type. ie: mysql.  Currently supported:</span>
+<a name="l00020"></a>00020 <span class="comment">                                 mysql, mysqli, postgre, odbc, mssql, sqlite, oci8</span>
+<a name="l00021"></a>00021 <span class="comment">|       ['dbprefix'] You can add an optional prefix, which will be added</span>
+<a name="l00022"></a>00022 <span class="comment">|                                to the table name when using the  Active Record class</span>
+<a name="l00023"></a>00023 <span class="comment">|       ['pconnect'] TRUE/FALSE - Whether to use a persistent connection</span>
+<a name="l00024"></a>00024 <span class="comment">|       ['db_debug'] TRUE/FALSE - Whether database errors should be displayed.</span>
+<a name="l00025"></a>00025 <span class="comment">|       ['cache_on'] TRUE/FALSE - Enables/disables query caching</span>
+<a name="l00026"></a>00026 <span class="comment">|       ['cachedir'] The path to the folder where cache files should be stored</span>
+<a name="l00027"></a>00027 <span class="comment">|       ['char_set'] The character set used in communicating with the database</span>
+<a name="l00028"></a>00028 <span class="comment">|       ['dbcollat'] The character collation used in communicating with the database</span>
+<a name="l00029"></a>00029 <span class="comment">|</span>
+<a name="l00030"></a>00030 <span class="comment">| The $active_group variable lets you choose which connection group to</span>
+<a name="l00031"></a>00031 <span class="comment">| make active.  By default there is only one group (the "default" group).</span>
+<a name="l00032"></a>00032 <span class="comment">|</span>
+<a name="l00033"></a>00033 <span class="comment">| The $active_record variables lets you determine whether or not to load</span>
+<a name="l00034"></a>00034 <span class="comment">| the active record class</span>
+<a name="l00035"></a>00035 <span class="comment">*/</span>
+<a name="l00036"></a>00036 
+<a name="l00037"></a><a class="code" href="database_8php.html#5046ea83a698c5b7bbf6ffd3dd816b65">00037</a> <a class="code" href="database_8php.html#5046ea83a698c5b7bbf6ffd3dd816b65">$active_group</a> = <span class="stringliteral">"default"</span>;
+<a name="l00038"></a><a class="code" href="database_8php.html#228b6ea91602f48a8831d0dc94809b94">00038</a> <a class="code" href="database_8php.html#228b6ea91602f48a8831d0dc94809b94">$active_record</a> = TRUE;
+<a name="l00039"></a>00039 
+<a name="l00040"></a><a class="code" href="database_8php.html#987b8cb0ae83b9519cb7c36fe25dbdd8">00040</a> <a class="code" href="database_8php.html#987b8cb0ae83b9519cb7c36fe25dbdd8">$db</a>[<span class="stringliteral">'default'</span>][<span class="stringliteral">'hostname'</span>] = <span class="stringliteral">"localhost"</span>;
+<a name="l00041"></a><a class="code" href="database_8php.html#2f535f16fa00521992cfc791c8dcec37">00041</a> <a class="code" href="database_8php.html#987b8cb0ae83b9519cb7c36fe25dbdd8">$db</a>[<span class="stringliteral">'default'</span>][<span class="stringliteral">'username'</span>] = <span class="stringliteral">""</span>;
+<a name="l00042"></a><a class="code" href="database_8php.html#1f6afce218438d9f7d13e28ee602e29b">00042</a> <a class="code" href="database_8php.html#987b8cb0ae83b9519cb7c36fe25dbdd8">$db</a>[<span class="stringliteral">'default'</span>][<span class="stringliteral">'password'</span>] = <span class="stringliteral">""</span>;
+<a name="l00043"></a><a class="code" href="database_8php.html#87e73e2a5365d1ee95a673b551238fef">00043</a> <a class="code" href="database_8php.html#987b8cb0ae83b9519cb7c36fe25dbdd8">$db</a>[<span class="stringliteral">'default'</span>][<span class="stringliteral">'database'</span>] = <span class="stringliteral">""</span>;
+<a name="l00044"></a><a class="code" href="database_8php.html#9f97429a3096d60fa26291b35f6cb7a9">00044</a> <a class="code" href="database_8php.html#987b8cb0ae83b9519cb7c36fe25dbdd8">$db</a>[<span class="stringliteral">'default'</span>][<span class="stringliteral">'dbdriver'</span>] = <span class="stringliteral">"mysql"</span>;
+<a name="l00045"></a><a class="code" href="database_8php.html#e0a3c1b4e2a1907dc70671ee97901456">00045</a> <a class="code" href="database_8php.html#987b8cb0ae83b9519cb7c36fe25dbdd8">$db</a>[<span class="stringliteral">'default'</span>][<span class="stringliteral">'dbprefix'</span>] = <span class="stringliteral">""</span>;
+<a name="l00046"></a><a class="code" href="database_8php.html#0bf35d484095b6728c2666580924569b">00046</a> <a class="code" href="database_8php.html#987b8cb0ae83b9519cb7c36fe25dbdd8">$db</a>[<span class="stringliteral">'default'</span>][<span class="stringliteral">'pconnect'</span>] = TRUE;
+<a name="l00047"></a><a class="code" href="database_8php.html#a79c6a73d78063a2b2ee6903a9851908">00047</a> <a class="code" href="database_8php.html#987b8cb0ae83b9519cb7c36fe25dbdd8">$db</a>[<span class="stringliteral">'default'</span>][<span class="stringliteral">'db_debug'</span>] = TRUE;
+<a name="l00048"></a><a class="code" href="database_8php.html#05a82adb11460f351c1df4ae9be71866">00048</a> <a class="code" href="database_8php.html#987b8cb0ae83b9519cb7c36fe25dbdd8">$db</a>[<span class="stringliteral">'default'</span>][<span class="stringliteral">'cache_on'</span>] = FALSE;
+<a name="l00049"></a><a class="code" href="database_8php.html#12683252490249e3294aebaca97c4126">00049</a> <a class="code" href="database_8php.html#987b8cb0ae83b9519cb7c36fe25dbdd8">$db</a>[<span class="stringliteral">'default'</span>][<span class="stringliteral">'cachedir'</span>] = <span class="stringliteral">""</span>;
+<a name="l00050"></a><a class="code" href="database_8php.html#581bc2f1f3fa806239c44e2c2293dc59">00050</a> <a class="code" href="database_8php.html#987b8cb0ae83b9519cb7c36fe25dbdd8">$db</a>[<span class="stringliteral">'default'</span>][<span class="stringliteral">'char_set'</span>] = <span class="stringliteral">"utf8"</span>;
+<a name="l00051"></a><a class="code" href="database_8php.html#b03697bf8340acfa74bf20c952aa81c7">00051</a> <a class="code" href="database_8php.html#987b8cb0ae83b9519cb7c36fe25dbdd8">$db</a>[<span class="stringliteral">'default'</span>][<span class="stringliteral">'dbcollat'</span>] = <span class="stringliteral">"utf8_general_ci"</span>;
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="comment">/* End of file database.php */</span>
+<a name="l00055"></a>00055 <span class="comment">/* Location: ./system/application/config/database.php */</span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Gerado em Fri Sep 3 23:55:06 2010 para ta por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

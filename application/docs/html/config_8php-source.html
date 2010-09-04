@@ -1,0 +1,368 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>ta: /home/filipo/Projects/TIT/prototipos/0.1/ta/application/config/config.php Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Gerado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;<u>S</u>earch&nbsp;for&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;ficheiros</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<h1>/home/filipo/Projects/TIT/prototipos/0.1/ta/application/config/config.php</h1><a href="config_8php.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 &lt;?php  <span class="keywordflow">if</span> ( ! defined(<span class="stringliteral">'BASEPATH'</span>)) exit(<span class="stringliteral">'No direct script access allowed'</span>);
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="comment">/*</span>
+<a name="l00004"></a>00004 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00005"></a>00005 <span class="comment">| Base Site URL</span>
+<a name="l00006"></a>00006 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00007"></a>00007 <span class="comment">|</span>
+<a name="l00008"></a>00008 <span class="comment">| URL to your CodeIgniter root. Typically this will be your base URL,</span>
+<a name="l00009"></a>00009 <span class="comment">| WITH a trailing slash:</span>
+<a name="l00010"></a>00010 <span class="comment">|</span>
+<a name="l00011"></a>00011 <span class="comment">|       http://example.com/</span>
+<a name="l00012"></a>00012 <span class="comment">|</span>
+<a name="l00013"></a>00013 <span class="comment">*/</span>
+<a name="l00014"></a><a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">00014</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'base_url'</span>]     = <span class="stringliteral">"http://www.tanobrasil.com.br/ta/"</span>;
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="comment">/*</span>
+<a name="l00017"></a>00017 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00018"></a>00018 <span class="comment">| Index File</span>
+<a name="l00019"></a>00019 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00020"></a>00020 <span class="comment">|</span>
+<a name="l00021"></a>00021 <span class="comment">| Typically this will be your index.php file, unless you've renamed it to</span>
+<a name="l00022"></a>00022 <span class="comment">| something else. If you are using mod_rewrite to remove the page set this</span>
+<a name="l00023"></a>00023 <span class="comment">| variable so that it is blank.</span>
+<a name="l00024"></a>00024 <span class="comment">|</span>
+<a name="l00025"></a>00025 <span class="comment">*/</span>
+<a name="l00026"></a><a class="code" href="config_8php.html#64d47dc21f6eab24bf747cae9da5e7bb">00026</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'index_page'</span>] = <span class="stringliteral">"index.php"</span>;
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 <span class="comment">/*</span>
+<a name="l00029"></a>00029 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00030"></a>00030 <span class="comment">| URI PROTOCOL</span>
+<a name="l00031"></a>00031 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00032"></a>00032 <span class="comment">|</span>
+<a name="l00033"></a>00033 <span class="comment">| This item determines which server global should be used to retrieve the</span>
+<a name="l00034"></a>00034 <span class="comment">| URI string.  The default setting of "AUTO" works for most servers.</span>
+<a name="l00035"></a>00035 <span class="comment">| If your links do not seem to work, try one of the other delicious flavors:</span>
+<a name="l00036"></a>00036 <span class="comment">|</span>
+<a name="l00037"></a>00037 <span class="comment">| 'AUTO'                        Default - auto detects</span>
+<a name="l00038"></a>00038 <span class="comment">| 'PATH_INFO'           Uses the PATH_INFO</span>
+<a name="l00039"></a>00039 <span class="comment">| 'QUERY_STRING'        Uses the QUERY_STRING</span>
+<a name="l00040"></a>00040 <span class="comment">| 'REQUEST_URI'         Uses the REQUEST_URI</span>
+<a name="l00041"></a>00041 <span class="comment">| 'ORIG_PATH_INFO'      Uses the ORIG_PATH_INFO</span>
+<a name="l00042"></a>00042 <span class="comment">|</span>
+<a name="l00043"></a>00043 <span class="comment">*/</span>
+<a name="l00044"></a><a class="code" href="config_8php.html#37a0ed82a5db3c3aebdc12611e1e4498">00044</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'uri_protocol'</span>] = <span class="stringliteral">"AUTO"</span>;
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 <span class="comment">/*</span>
+<a name="l00047"></a>00047 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00048"></a>00048 <span class="comment">| URL suffix</span>
+<a name="l00049"></a>00049 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00050"></a>00050 <span class="comment">|</span>
+<a name="l00051"></a>00051 <span class="comment">| This option allows you to add a suffix to all URLs generated by CodeIgniter.</span>
+<a name="l00052"></a>00052 <span class="comment">| For more information please see the user guide:</span>
+<a name="l00053"></a>00053 <span class="comment">|</span>
+<a name="l00054"></a>00054 <span class="comment">| http://codeigniter.com/user_guide/general/urls.html</span>
+<a name="l00055"></a>00055 <span class="comment">*/</span>
+<a name="l00056"></a>00056 
+<a name="l00057"></a><a class="code" href="config_8php.html#40da61bb27389d4c21a1271840ec7c40">00057</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'url_suffix'</span>] = <span class="stringliteral">""</span>;
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 <span class="comment">/*</span>
+<a name="l00060"></a>00060 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00061"></a>00061 <span class="comment">| Default Language</span>
+<a name="l00062"></a>00062 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00063"></a>00063 <span class="comment">|</span>
+<a name="l00064"></a>00064 <span class="comment">| This determines which set of language files should be used. Make sure</span>
+<a name="l00065"></a>00065 <span class="comment">| there is an available translation if you intend to use something other</span>
+<a name="l00066"></a>00066 <span class="comment">| than english.</span>
+<a name="l00067"></a>00067 <span class="comment">|</span>
+<a name="l00068"></a>00068 <span class="comment">*/</span>
+<a name="l00069"></a><a class="code" href="config_8php.html#e05e29ba794fe4453013dd7b1cc30219">00069</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'language'</span>]     = <span class="stringliteral">"english"</span>;
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 <span class="comment">/*</span>
+<a name="l00072"></a>00072 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00073"></a>00073 <span class="comment">| Default Character Set</span>
+<a name="l00074"></a>00074 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00075"></a>00075 <span class="comment">|</span>
+<a name="l00076"></a>00076 <span class="comment">| This determines which character set is used by default in various methods</span>
+<a name="l00077"></a>00077 <span class="comment">| that require a character set to be provided.</span>
+<a name="l00078"></a>00078 <span class="comment">|</span>
+<a name="l00079"></a>00079 <span class="comment">*/</span>
+<a name="l00080"></a><a class="code" href="config_8php.html#c9128ac0276b1b7acf4c96a22b2469f1">00080</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'charset'</span>] = <span class="stringliteral">"UTF-8"</span>;
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082 <span class="comment">/*</span>
+<a name="l00083"></a>00083 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00084"></a>00084 <span class="comment">| Enable/Disable System Hooks</span>
+<a name="l00085"></a>00085 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00086"></a>00086 <span class="comment">|</span>
+<a name="l00087"></a>00087 <span class="comment">| If you would like to use the "hooks" feature you must enable it by</span>
+<a name="l00088"></a>00088 <span class="comment">| setting this variable to TRUE (boolean).  See the user guide for details.</span>
+<a name="l00089"></a>00089 <span class="comment">|</span>
+<a name="l00090"></a>00090 <span class="comment">*/</span>
+<a name="l00091"></a><a class="code" href="config_8php.html#2d80c3b160b2bb6f3329a9b07e970c51">00091</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'enable_hooks'</span>] = FALSE;
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094 <span class="comment">/*</span>
+<a name="l00095"></a>00095 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00096"></a>00096 <span class="comment">| Class Extension Prefix</span>
+<a name="l00097"></a>00097 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00098"></a>00098 <span class="comment">|</span>
+<a name="l00099"></a>00099 <span class="comment">| This item allows you to set the filename/classname prefix when extending</span>
+<a name="l00100"></a>00100 <span class="comment">| native libraries.  For more information please see the user guide:</span>
+<a name="l00101"></a>00101 <span class="comment">|</span>
+<a name="l00102"></a>00102 <span class="comment">| http://codeigniter.com/user_guide/general/core_classes.html</span>
+<a name="l00103"></a>00103 <span class="comment">| http://codeigniter.com/user_guide/general/creating_libraries.html</span>
+<a name="l00104"></a>00104 <span class="comment">|</span>
+<a name="l00105"></a>00105 <span class="comment">*/</span>
+<a name="l00106"></a><a class="code" href="config_8php.html#51b79c9e455d64cb54212f2966b28ae6">00106</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'subclass_prefix'</span>] = <span class="stringliteral">'MY_'</span>;
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109 <span class="comment">/*</span>
+<a name="l00110"></a>00110 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00111"></a>00111 <span class="comment">| Allowed URL Characters</span>
+<a name="l00112"></a>00112 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00113"></a>00113 <span class="comment">|</span>
+<a name="l00114"></a>00114 <span class="comment">| This lets you specify with a regular expression which characters are permitted</span>
+<a name="l00115"></a>00115 <span class="comment">| within your URLs.  When someone tries to submit a URL with disallowed</span>
+<a name="l00116"></a>00116 <span class="comment">| characters they will get a warning message.</span>
+<a name="l00117"></a>00117 <span class="comment">|</span>
+<a name="l00118"></a>00118 <span class="comment">| As a security measure you are STRONGLY encouraged to restrict URLs to</span>
+<a name="l00119"></a>00119 <span class="comment">| as few characters as possible.  By default only these are allowed: a-z 0-9~%.:_-</span>
+<a name="l00120"></a>00120 <span class="comment">|</span>
+<a name="l00121"></a>00121 <span class="comment">| Leave blank to allow all characters -- but only if you are insane.</span>
+<a name="l00122"></a>00122 <span class="comment">|</span>
+<a name="l00123"></a>00123 <span class="comment">| DO NOT CHANGE THIS UNLESS YOU FULLY UNDERSTAND THE REPERCUSSIONS!!</span>
+<a name="l00124"></a>00124 <span class="comment">|</span>
+<a name="l00125"></a>00125 <span class="comment">*/</span>
+<a name="l00126"></a><a class="code" href="config_8php.html#e2e36375b245287a8851ac04565994de">00126</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'permitted_uri_chars'</span>] = <span class="stringliteral">'a-z 0-9~%.:_\-'</span>;
+<a name="l00127"></a>00127 
+<a name="l00128"></a>00128 
+<a name="l00129"></a>00129 <span class="comment">/*</span>
+<a name="l00130"></a>00130 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00131"></a>00131 <span class="comment">| Enable Query Strings</span>
+<a name="l00132"></a>00132 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00133"></a>00133 <span class="comment">|</span>
+<a name="l00134"></a>00134 <span class="comment">| By default CodeIgniter uses search-engine friendly segment based URLs:</span>
+<a name="l00135"></a>00135 <span class="comment">| example.com/who/what/where/</span>
+<a name="l00136"></a>00136 <span class="comment">|</span>
+<a name="l00137"></a>00137 <span class="comment">| You can optionally enable standard query string based URLs:</span>
+<a name="l00138"></a>00138 <span class="comment">| example.com?who=me&amp;what=something&amp;where=here</span>
+<a name="l00139"></a>00139 <span class="comment">|</span>
+<a name="l00140"></a>00140 <span class="comment">| Options are: TRUE or FALSE (boolean)</span>
+<a name="l00141"></a>00141 <span class="comment">|</span>
+<a name="l00142"></a>00142 <span class="comment">| The other items let you set the query string "words" that will</span>
+<a name="l00143"></a>00143 <span class="comment">| invoke your controllers and its functions:</span>
+<a name="l00144"></a>00144 <span class="comment">| example.com/index.php?c=controller&amp;m=function</span>
+<a name="l00145"></a>00145 <span class="comment">|</span>
+<a name="l00146"></a>00146 <span class="comment">| Please note that some of the helpers won't work as expected when</span>
+<a name="l00147"></a>00147 <span class="comment">| this feature is enabled, since CodeIgniter is designed primarily to</span>
+<a name="l00148"></a>00148 <span class="comment">| use segment based URLs.</span>
+<a name="l00149"></a>00149 <span class="comment">|</span>
+<a name="l00150"></a>00150 <span class="comment">*/</span>
+<a name="l00151"></a><a class="code" href="config_8php.html#227b7a6fec0306454ffb0dead1f1c4f7">00151</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'enable_query_strings'</span>] = FALSE;
+<a name="l00152"></a><a class="code" href="config_8php.html#7ea9e139536f27af75812de53e852829">00152</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'controller_trigger'</span>]   = <span class="charliteral">'c'</span>;
+<a name="l00153"></a><a class="code" href="config_8php.html#cac6a7410b2ae72152894e3b93501811">00153</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'function_trigger'</span>]     = <span class="charliteral">'m'</span>;
+<a name="l00154"></a><a class="code" href="config_8php.html#f7e6593d4088b77d153dafff4567f143">00154</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'directory_trigger'</span>]    = <span class="charliteral">'d'</span>; <span class="comment">// experimental not currently in use</span>
+<a name="l00155"></a>00155 
+<a name="l00156"></a>00156 <span class="comment">/*</span>
+<a name="l00157"></a>00157 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00158"></a>00158 <span class="comment">| Error Logging Threshold</span>
+<a name="l00159"></a>00159 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00160"></a>00160 <span class="comment">|</span>
+<a name="l00161"></a>00161 <span class="comment">| If you have enabled error logging, you can set an error threshold to </span>
+<a name="l00162"></a>00162 <span class="comment">| determine what gets logged. Threshold options are:</span>
+<a name="l00163"></a>00163 <span class="comment">| You can enable error logging by setting a threshold over zero. The</span>
+<a name="l00164"></a>00164 <span class="comment">| threshold determines what gets logged. Threshold options are:</span>
+<a name="l00165"></a>00165 <span class="comment">|</span>
+<a name="l00166"></a>00166 <span class="comment">|       0 = Disables logging, Error logging TURNED OFF</span>
+<a name="l00167"></a>00167 <span class="comment">|       1 = Error Messages (including PHP errors)</span>
+<a name="l00168"></a>00168 <span class="comment">|       2 = Debug Messages</span>
+<a name="l00169"></a>00169 <span class="comment">|       3 = Informational Messages</span>
+<a name="l00170"></a>00170 <span class="comment">|       4 = All Messages</span>
+<a name="l00171"></a>00171 <span class="comment">|</span>
+<a name="l00172"></a>00172 <span class="comment">| For a live site you'll usually only enable Errors (1) to be logged otherwise</span>
+<a name="l00173"></a>00173 <span class="comment">| your log files will fill up very fast.</span>
+<a name="l00174"></a>00174 <span class="comment">|</span>
+<a name="l00175"></a>00175 <span class="comment">*/</span>
+<a name="l00176"></a><a class="code" href="config_8php.html#7e7fe9a5aa2c85e48865b154035dab6a">00176</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'log_threshold'</span>] = 0;
+<a name="l00177"></a>00177 
+<a name="l00178"></a>00178 <span class="comment">/*</span>
+<a name="l00179"></a>00179 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00180"></a>00180 <span class="comment">| Error Logging Directory Path</span>
+<a name="l00181"></a>00181 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00182"></a>00182 <span class="comment">|</span>
+<a name="l00183"></a>00183 <span class="comment">| Leave this BLANK unless you would like to set something other than the default</span>
+<a name="l00184"></a>00184 <span class="comment">| system/logs/ folder.  Use a full server path with trailing slash.</span>
+<a name="l00185"></a>00185 <span class="comment">|</span>
+<a name="l00186"></a>00186 <span class="comment">*/</span>
+<a name="l00187"></a><a class="code" href="config_8php.html#ee8524f2388d21b1c73de5c48a82b687">00187</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'log_path'</span>] = <span class="stringliteral">''</span>;
+<a name="l00188"></a>00188 
+<a name="l00189"></a>00189 <span class="comment">/*</span>
+<a name="l00190"></a>00190 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00191"></a>00191 <span class="comment">| Date Format for Logs</span>
+<a name="l00192"></a>00192 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00193"></a>00193 <span class="comment">|</span>
+<a name="l00194"></a>00194 <span class="comment">| Each item that is logged has an associated date. You can use PHP date</span>
+<a name="l00195"></a>00195 <span class="comment">| codes to set your own date formatting</span>
+<a name="l00196"></a>00196 <span class="comment">|</span>
+<a name="l00197"></a>00197 <span class="comment">*/</span>
+<a name="l00198"></a><a class="code" href="config_8php.html#9cc05811c32c13c55ed407435a3a31b6">00198</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'log_date_format'</span>] = <span class="stringliteral">'Y-m-d H:i:s'</span>;
+<a name="l00199"></a>00199 
+<a name="l00200"></a>00200 <span class="comment">/*</span>
+<a name="l00201"></a>00201 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00202"></a>00202 <span class="comment">| Cache Directory Path</span>
+<a name="l00203"></a>00203 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00204"></a>00204 <span class="comment">|</span>
+<a name="l00205"></a>00205 <span class="comment">| Leave this BLANK unless you would like to set something other than the default</span>
+<a name="l00206"></a>00206 <span class="comment">| system/cache/ folder.  Use a full server path with trailing slash.</span>
+<a name="l00207"></a>00207 <span class="comment">|</span>
+<a name="l00208"></a>00208 <span class="comment">*/</span>
+<a name="l00209"></a><a class="code" href="config_8php.html#e3a5dd52b4d040adb6461b9a17d1e0f0">00209</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'cache_path'</span>] = <span class="stringliteral">''</span>;
+<a name="l00210"></a>00210 
+<a name="l00211"></a>00211 <span class="comment">/*</span>
+<a name="l00212"></a>00212 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00213"></a>00213 <span class="comment">| Encryption Key</span>
+<a name="l00214"></a>00214 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00215"></a>00215 <span class="comment">|</span>
+<a name="l00216"></a>00216 <span class="comment">| If you use the Encryption class or the Sessions class with encryption</span>
+<a name="l00217"></a>00217 <span class="comment">| enabled you MUST set an encryption key.  See the user guide for info.</span>
+<a name="l00218"></a>00218 <span class="comment">|</span>
+<a name="l00219"></a>00219 <span class="comment">*/</span>
+<a name="l00220"></a><a class="code" href="config_8php.html#efa5c9d6e7a454a6218df87e65796357">00220</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'encryption_key'</span>] = <span class="stringliteral">""</span>;
+<a name="l00221"></a>00221 
+<a name="l00222"></a>00222 <span class="comment">/*</span>
+<a name="l00223"></a>00223 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00224"></a>00224 <span class="comment">| Session Variables</span>
+<a name="l00225"></a>00225 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00226"></a>00226 <span class="comment">|</span>
+<a name="l00227"></a>00227 <span class="comment">| 'session_cookie_name' = the name you want for the cookie</span>
+<a name="l00228"></a>00228 <span class="comment">| 'encrypt_sess_cookie' = TRUE/FALSE (boolean).  Whether to encrypt the cookie</span>
+<a name="l00229"></a>00229 <span class="comment">| 'session_expiration'  = the number of SECONDS you want the session to last.</span>
+<a name="l00230"></a>00230 <span class="comment">|  by default sessions last 7200 seconds (two hours).  Set to zero for no expiration.</span>
+<a name="l00231"></a>00231 <span class="comment">| 'time_to_update'              = how many seconds between CI refreshing Session Information</span>
+<a name="l00232"></a>00232 <span class="comment">|</span>
+<a name="l00233"></a>00233 <span class="comment">*/</span>
+<a name="l00234"></a><a class="code" href="config_8php.html#caf9fb6347a03527f4b04198d6d8155b">00234</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'sess_cookie_name'</span>]             = <span class="stringliteral">'ci_session'</span>;
+<a name="l00235"></a><a class="code" href="config_8php.html#d6a3784cad81991936465dcdac74b66a">00235</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'sess_expiration'</span>]              = 7200;
+<a name="l00236"></a><a class="code" href="config_8php.html#ed8943fa55fc74e62b540e8638c03038">00236</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'sess_encrypt_cookie'</span>]  = FALSE;
+<a name="l00237"></a><a class="code" href="config_8php.html#e320549e749a21903b685e363820370a">00237</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'sess_use_database'</span>]    = FALSE;
+<a name="l00238"></a><a class="code" href="config_8php.html#b65a6c6a4a0f2339707a4c20c44bf16b">00238</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'sess_table_name'</span>]              = <span class="stringliteral">'ci_sessions'</span>;
+<a name="l00239"></a><a class="code" href="config_8php.html#ed449d12f2854249e5f7229fafb269b2">00239</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'sess_match_ip'</span>]                = FALSE;
+<a name="l00240"></a><a class="code" href="config_8php.html#90a66e41bce1a62ff818c4f0e3aa09d2">00240</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'sess_match_useragent'</span>] = TRUE;
+<a name="l00241"></a><a class="code" href="config_8php.html#fb6a66c470a9c08b90efcbc6c5594573">00241</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'sess_time_to_update'</span>]  = 300;
+<a name="l00242"></a>00242 
+<a name="l00243"></a>00243 <span class="comment">/*</span>
+<a name="l00244"></a>00244 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00245"></a>00245 <span class="comment">| Cookie Related Variables</span>
+<a name="l00246"></a>00246 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00247"></a>00247 <span class="comment">|</span>
+<a name="l00248"></a>00248 <span class="comment">| 'cookie_prefix' = Set a prefix if you need to avoid collisions</span>
+<a name="l00249"></a>00249 <span class="comment">| 'cookie_domain' = Set to .your-domain.com for site-wide cookies</span>
+<a name="l00250"></a>00250 <span class="comment">| 'cookie_path'   =  Typically will be a forward slash</span>
+<a name="l00251"></a>00251 <span class="comment">|</span>
+<a name="l00252"></a>00252 <span class="comment">*/</span>
+<a name="l00253"></a><a class="code" href="config_8php.html#e5f35eb62ffdcfa1878ed13fa47b2d5d">00253</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'cookie_prefix'</span>]        = <span class="stringliteral">""</span>;
+<a name="l00254"></a><a class="code" href="config_8php.html#4f967865afe18263372e9c66223a752e">00254</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'cookie_domain'</span>]        = <span class="stringliteral">""</span>;
+<a name="l00255"></a><a class="code" href="config_8php.html#eadefdcde429770b04a079e002194d2f">00255</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'cookie_path'</span>]          = <span class="stringliteral">"/"</span>;
+<a name="l00256"></a>00256 
+<a name="l00257"></a>00257 <span class="comment">/*</span>
+<a name="l00258"></a>00258 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00259"></a>00259 <span class="comment">| Global XSS Filtering</span>
+<a name="l00260"></a>00260 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00261"></a>00261 <span class="comment">|</span>
+<a name="l00262"></a>00262 <span class="comment">| Determines whether the XSS filter is always active when GET, POST or</span>
+<a name="l00263"></a>00263 <span class="comment">| COOKIE data is encountered</span>
+<a name="l00264"></a>00264 <span class="comment">|</span>
+<a name="l00265"></a>00265 <span class="comment">*/</span>
+<a name="l00266"></a><a class="code" href="config_8php.html#fee3589eecfa5ebecf39f44c271d58ce">00266</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'global_xss_filtering'</span>] = FALSE;
+<a name="l00267"></a>00267 
+<a name="l00268"></a>00268 <span class="comment">/*</span>
+<a name="l00269"></a>00269 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00270"></a>00270 <span class="comment">| Output Compression</span>
+<a name="l00271"></a>00271 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00272"></a>00272 <span class="comment">|</span>
+<a name="l00273"></a>00273 <span class="comment">| Enables Gzip output compression for faster page loads.  When enabled,</span>
+<a name="l00274"></a>00274 <span class="comment">| the output class will test whether your server supports Gzip.</span>
+<a name="l00275"></a>00275 <span class="comment">| Even if it does, however, not all browsers support compression</span>
+<a name="l00276"></a>00276 <span class="comment">| so enable only if you are reasonably sure your visitors can handle it.</span>
+<a name="l00277"></a>00277 <span class="comment">|</span>
+<a name="l00278"></a>00278 <span class="comment">| VERY IMPORTANT:  If you are getting a blank page when compression is enabled it</span>
+<a name="l00279"></a>00279 <span class="comment">| means you are prematurely outputting something to your browser. It could</span>
+<a name="l00280"></a>00280 <span class="comment">| even be a line of whitespace at the end of one of your scripts.  For</span>
+<a name="l00281"></a>00281 <span class="comment">| compression to work, nothing can be sent before the output buffer is called</span>
+<a name="l00282"></a>00282 <span class="comment">| by the output class.  Do not "echo" any values with compression enabled.</span>
+<a name="l00283"></a>00283 <span class="comment">|</span>
+<a name="l00284"></a>00284 <span class="comment">*/</span>
+<a name="l00285"></a><a class="code" href="config_8php.html#5f03a6c067b921917c2d978f4991bcd1">00285</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'compress_output'</span>] = FALSE;
+<a name="l00286"></a>00286 
+<a name="l00287"></a>00287 <span class="comment">/*</span>
+<a name="l00288"></a>00288 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00289"></a>00289 <span class="comment">| Master Time Reference</span>
+<a name="l00290"></a>00290 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00291"></a>00291 <span class="comment">|</span>
+<a name="l00292"></a>00292 <span class="comment">| Options are "local" or "gmt".  This pref tells the system whether to use</span>
+<a name="l00293"></a>00293 <span class="comment">| your server's local time as the master "now" reference, or convert it to</span>
+<a name="l00294"></a>00294 <span class="comment">| GMT.  See the "date helper" page of the user guide for information</span>
+<a name="l00295"></a>00295 <span class="comment">| regarding date handling.</span>
+<a name="l00296"></a>00296 <span class="comment">|</span>
+<a name="l00297"></a>00297 <span class="comment">*/</span>
+<a name="l00298"></a><a class="code" href="config_8php.html#cb20698e35bc3d4b9692a4b4619b1b05">00298</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'time_reference'</span>] = <span class="stringliteral">'local'</span>;
+<a name="l00299"></a>00299 
+<a name="l00300"></a>00300 
+<a name="l00301"></a>00301 <span class="comment">/*</span>
+<a name="l00302"></a>00302 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00303"></a>00303 <span class="comment">| Rewrite PHP Short Tags</span>
+<a name="l00304"></a>00304 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00305"></a>00305 <span class="comment">|</span>
+<a name="l00306"></a>00306 <span class="comment">| If your PHP installation does not have short tag support enabled CI</span>
+<a name="l00307"></a>00307 <span class="comment">| can rewrite the tags on-the-fly, enabling you to utilize that syntax</span>
+<a name="l00308"></a>00308 <span class="comment">| in your view files.  Options are TRUE or FALSE (boolean)</span>
+<a name="l00309"></a>00309 <span class="comment">|</span>
+<a name="l00310"></a>00310 <span class="comment">*/</span>
+<a name="l00311"></a><a class="code" href="config_8php.html#5d2e2b3f3030d1bd97f6d986ef13ace9">00311</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'rewrite_short_tags'</span>] = FALSE;
+<a name="l00312"></a>00312 
+<a name="l00313"></a>00313 
+<a name="l00314"></a>00314 <span class="comment">/*</span>
+<a name="l00315"></a>00315 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00316"></a>00316 <span class="comment">| Reverse Proxy IPs</span>
+<a name="l00317"></a>00317 <span class="comment">|--------------------------------------------------------------------------</span>
+<a name="l00318"></a>00318 <span class="comment">|</span>
+<a name="l00319"></a>00319 <span class="comment">| If your server is behind a reverse proxy, you must whitelist the proxy IP</span>
+<a name="l00320"></a>00320 <span class="comment">| addresses from which CodeIgniter should trust the HTTP_X_FORWARDED_FOR</span>
+<a name="l00321"></a>00321 <span class="comment">| header in order to properly identify the visitor's IP address.</span>
+<a name="l00322"></a>00322 <span class="comment">| Comma-delimited, e.g. '10.0.1.200,10.0.1.201'</span>
+<a name="l00323"></a>00323 <span class="comment">|</span>
+<a name="l00324"></a>00324 <span class="comment">*/</span>
+<a name="l00325"></a><a class="code" href="config_8php.html#99ce814cf767ce4e281380e6f2158b1b">00325</a> <a class="code" href="config_8php.html#8063081991a9d7087e6aea78db95a524">$config</a>[<span class="stringliteral">'proxy_ips'</span>] = <span class="stringliteral">''</span>;
+<a name="l00326"></a>00326 
+<a name="l00327"></a>00327 
+<a name="l00328"></a>00328 <span class="comment">/* End of file config.php */</span>
+<a name="l00329"></a>00329 <span class="comment">/* Location: ./application/config/config.php */</span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Gerado em Fri Sep 3 23:55:06 2010 para ta por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

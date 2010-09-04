@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>ta: /home/filipo/Projects/TIT/prototipos/0.1/ta/application/t/testes.php Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Gerado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;<u>S</u>earch&nbsp;for&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;ficheiros</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<h1>/home/filipo/Projects/TIT/prototipos/0.1/ta/application/t/testes.php</h1><a href="testes_8php.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 &lt;?php
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003     $this-&gt;load-&gt;library(<span class="stringliteral">'unit_test'</span>);
+<a name="l00004"></a>00004     $this-&gt;output-&gt;enable_profiler(TRUE);
+<a name="l00005"></a><a class="code" href="testes_8php.html#0796b875efb5f5897862d8b24c75c209">00005</a>     $this-&gt;<a class="code" href="00__load_8t_8php.html#51b7fe0290aa48b405d897f947ec6a94">tests</a> = array();
+<a name="l00006"></a>00006    
+<a name="l00007"></a>00007     <span class="comment">// suite de testes:</span>
+<a name="l00008"></a><a class="code" href="testes_8php.html#0cf5dd496d9f5ff1edf00d234771dcfe">00008</a>     <a class="code" href="testes_8php.html#0cf5dd496d9f5ff1edf00d234771dcfe">$d</a> = dir(<span class="stringliteral">"../application/t"</span>);
+<a name="l00009"></a>00009     <span class="keywordflow">while</span> (<span class="keyword">false</span> !== ($entry = <a class="code" href="testes_8php.html#0cf5dd496d9f5ff1edf00d234771dcfe">$d</a>-&gt;read())) {
+<a name="l00010"></a>00010         <span class="keywordflow">if</span> (substr($entry, -6, 6) ==  <span class="stringliteral">'.t.php'</span> &amp;&amp;
+<a name="l00011"></a>00011             $entry != <span class="charliteral">'.'</span> &amp;&amp;
+<a name="l00012"></a>00012             $entry != <span class="stringliteral">'..'</span>) {
+<a name="l00013"></a>00013             include $entry;
+<a name="l00014"></a>00014         }
+<a name="l00015"></a>00015     }           
+<a name="l00016"></a>00016     <a class="code" href="testes_8php.html#0cf5dd496d9f5ff1edf00d234771dcfe">$d</a>-&gt;close();
+<a name="l00017"></a>00017 
+<a name="l00018"></a><a class="code" href="testes_8php.html#844ffd5a7bc2a39585fedea9df1a92b5">00018</a>     <a class="code" href="testes_8php.html#844ffd5a7bc2a39585fedea9df1a92b5">$data</a>[<span class="stringliteral">'tests'</span>] = $this-&gt;<a class="code" href="00__load_8t_8php.html#51b7fe0290aa48b405d897f947ec6a94">tests</a>;
+<a name="l00019"></a>00019     $this-&gt;load-&gt;view(<span class="stringliteral">'tests_page'</span>, <a class="code" href="testes_8php.html#844ffd5a7bc2a39585fedea9df1a92b5">$data</a>);
+<a name="l00020"></a>00020                             
+<a name="l00021"></a>00021 ?&gt;               
+<a name="l00022"></a>00022                  
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Gerado em Fri Sep 3 23:55:06 2010 para ta por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

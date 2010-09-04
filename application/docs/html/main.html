@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>ta: Funcionalidades do ta</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Gerado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li class="current"><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;<u>S</u>earch&nbsp;for&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1><a class="anchor" name="main">Funcionalidades do <a class="el" href="namespaceta.html">ta</a> </a></h1><a class="el" href="namespaceta.html">ta</a> é um website na iternet que permite buscas em fontes abstratas de dados.<p>
+A implementacao inicial usa um mashup com o google maps mas deve sempre haver uma forma clara e simples de aplicar ganchos para outras fontes de dados a critério do usuário.<p>
+<ul>
+<li>Abertura (<a class="el" href="class_welcome.html">Welcome</a>)</li>
+</ul>
+A interface de abertura usa um mashup do panoramio para apresentar o fundo de tela com imagens aleatórias do Brasil. A idéia é criar um set de imagens e carregar na abertura. Durante as buscas a tag de busca no panoramio deve ser o texto digitado pelo usuario.<p>
+<ul>
+<li><a class="el" href="class_admin.html" title="Cotrolador para.">Admin</a></li>
+</ul>
+A interface <a class="el" href="class_admin.html" title="Cotrolador para.">Admin</a> apresenta o Backend da aplicação, permitindo o gerenciamento e edição dos dados de:<ol type=1>
+<li>usuários,<ul>
+<li>Admin::usuarios()</li><li>Admin::usuarios($id)</li></ul>
+</li><li>pontos turísticos,<ul>
+<li>Admin::turisticos()</li><li>Admin::turisticos($id)</li></ul>
+</li><li>hotéis,<ul>
+<li><a class="el" href="class_admin.html#01cbcfdab22c95ada2d6c1824ee1ad50" title="Controlador para gerenciamento de hoteis.">Admin::hoteis()</a></li><li><a class="el" href="class_admin.html#01cbcfdab22c95ada2d6c1824ee1ad50" title="Controlador para gerenciamento de hoteis.">Admin::hoteis</a>($id)</li></ul>
+</li><li>restaurantes,<ul>
+<li><a class="el" href="class_admin.html#f2623588a96b9b77489b4d43f3258740" title="Controlador para gerenciamento de restaurantes.">Admin::restaurantes()</a></li><li><a class="el" href="class_admin.html#f2623588a96b9b77489b4d43f3258740" title="Controlador para gerenciamento de restaurantes.">Admin::restaurantes</a>($id)</li></ul>
+</li><li>patrocinadores e<ul>
+<li>Admin::patrocinadores()</li><li>Admin::patrocinadores($id)</li></ul>
+</li><li>parceiros<ul>
+<li>Admin::parceiros()</li><li>Admin::parceiros($id)</li></ul>
+</li></ol>
+<p>
+<ul>
+<li><a class="el" href="class_taonde.html" title="Cotrolador para buscas.">Taonde</a></li>
+</ul>
+A interface <a class="el" href="class_taonde.html" title="Cotrolador para buscas.">Taonde</a> realiza as buscas.<p>
+<a class="el" href="class_taonde.html" title="Cotrolador para buscas.">Taonde</a> comporta 2 metodos:<ol type=1>
+<li>restaurantes, que busca restaurantes</li></ol>
+<p>
+<a class="el" href="class_taonde.html#249d2297921cbdeb4ac155fa73ebe0bf" title="Controlador para a busca em restaurantes.">Taonde::restaurantes</a>($busca)<p>
+<ol type=1>
+<li>taqui, que busca hotéis e pontos turísticos</li></ol>
+<p>
+<a class="el" href="class_taonde.html#0e99e4fac9cdc3676bed2bcebe812571" title="Controlador para busca geral por palavra-chave.">Taonde::taqui</a>($busca)<p>
+Estes métodos devem ser chamados em ajax e carregados nas camadas específicas. </div>
+<hr size="1"><address style="text-align: right;"><small>Gerado em Fri Sep 3 23:55:07 2010 para ta por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

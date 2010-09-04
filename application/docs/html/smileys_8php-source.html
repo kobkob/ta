@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>ta: /home/filipo/Projects/TIT/prototipos/0.1/ta/application/config/smileys.php Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Gerado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;<u>S</u>earch&nbsp;for&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;ficheiros</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<h1>/home/filipo/Projects/TIT/prototipos/0.1/ta/application/config/smileys.php</h1><a href="smileys_8php.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 &lt;?php  <span class="keywordflow">if</span> ( ! defined(<span class="stringliteral">'BASEPATH'</span>)) exit(<span class="stringliteral">'No direct script access allowed'</span>);
+<a name="l00002"></a>00002 <span class="comment">/*</span>
+<a name="l00003"></a>00003 <span class="comment">| -------------------------------------------------------------------</span>
+<a name="l00004"></a>00004 <span class="comment">| SMILEYS</span>
+<a name="l00005"></a>00005 <span class="comment">| -------------------------------------------------------------------</span>
+<a name="l00006"></a>00006 <span class="comment">| This file contains an array of smileys for use with the emoticon helper.</span>
+<a name="l00007"></a>00007 <span class="comment">| Individual images can be used to replace multiple simileys.  For example:</span>
+<a name="l00008"></a>00008 <span class="comment">| :-) and :) use the same image replacement.</span>
+<a name="l00009"></a>00009 <span class="comment">|</span>
+<a name="l00010"></a>00010 <span class="comment">| Please see user guide for more info: </span>
+<a name="l00011"></a>00011 <span class="comment">| http://codeigniter.com/user_guide/helpers/smiley_helper.html</span>
+<a name="l00012"></a>00012 <span class="comment">|</span>
+<a name="l00013"></a>00013 <span class="comment">*/</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a><a class="code" href="smileys_8php.html#3f21d1c0fb54cb2010e7c7004f29f74c">00015</a> <a class="code" href="smileys_8php.html#3f21d1c0fb54cb2010e7c7004f29f74c">$smileys</a> = array(
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="comment">//      smiley                  image name                                              width   height  alt</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019         <span class="stringliteral">':-)'</span>                   =&gt;      array(<span class="stringliteral">'grin.gif'</span>,                       <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'grin'</span>),
+<a name="l00020"></a>00020         <span class="stringliteral">':lol:'</span>                 =&gt;      array(<span class="stringliteral">'lol.gif'</span>,                        <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'LOL'</span>),
+<a name="l00021"></a>00021         <span class="stringliteral">':cheese:'</span>              =&gt;      array(<span class="stringliteral">'cheese.gif'</span>,                     <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'cheese'</span>),
+<a name="l00022"></a>00022         <span class="stringliteral">':)'</span>                    =&gt;      array(<span class="stringliteral">'smile.gif'</span>,                      <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'smile'</span>),
+<a name="l00023"></a>00023         <span class="stringliteral">';-)'</span>                   =&gt;      array(<span class="stringliteral">'wink.gif'</span>,                       <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'wink'</span>),
+<a name="l00024"></a>00024         <span class="stringliteral">';)'</span>                    =&gt;      array(<span class="stringliteral">'wink.gif'</span>,                       <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'wink'</span>),
+<a name="l00025"></a>00025         <span class="stringliteral">':smirk:'</span>               =&gt;      array(<span class="stringliteral">'smirk.gif'</span>,                      <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'smirk'</span>),
+<a name="l00026"></a>00026         <span class="stringliteral">':roll:'</span>                =&gt;      array(<span class="stringliteral">'rolleyes.gif'</span>,           <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'rolleyes'</span>),
+<a name="l00027"></a>00027         <span class="stringliteral">':-S'</span>                   =&gt;      array(<span class="stringliteral">'confused.gif'</span>,           <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'confused'</span>),
+<a name="l00028"></a>00028         <span class="stringliteral">':wow:'</span>                 =&gt;      array(<span class="stringliteral">'surprise.gif'</span>,           <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'surprised'</span>),
+<a name="l00029"></a>00029         <span class="stringliteral">':bug:'</span>                 =&gt;      array(<span class="stringliteral">'bigsurprise.gif'</span>,        <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'big surprise'</span>),
+<a name="l00030"></a>00030         <span class="stringliteral">':-P'</span>                   =&gt;      array(<span class="stringliteral">'tongue_laugh.gif'</span>,       <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'tongue laugh'</span>),
+<a name="l00031"></a>00031         <span class="stringliteral">'%-P'</span>                   =&gt;      array(<span class="stringliteral">'tongue_rolleye.gif'</span>,     <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'tongue rolleye'</span>),
+<a name="l00032"></a>00032         <span class="stringliteral">';-P'</span>                   =&gt;      array(<span class="stringliteral">'tongue_wink.gif'</span>,        <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'tongue wink'</span>),
+<a name="l00033"></a>00033         <span class="stringliteral">':P'</span>                    =&gt;      array(<span class="stringliteral">'raspberry.gif'</span>,          <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'raspberry'</span>),
+<a name="l00034"></a>00034         <span class="stringliteral">':blank:'</span>               =&gt;      array(<span class="stringliteral">'blank.gif'</span>,                      <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'blank stare'</span>),
+<a name="l00035"></a>00035         <span class="stringliteral">':long:'</span>                =&gt;      array(<span class="stringliteral">'longface.gif'</span>,           <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'long face'</span>),
+<a name="l00036"></a>00036         <span class="stringliteral">':ohh:'</span>                 =&gt;      array(<span class="stringliteral">'ohh.gif'</span>,                        <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'ohh'</span>),
+<a name="l00037"></a>00037         <span class="stringliteral">':grrr:'</span>                =&gt;      array(<span class="stringliteral">'grrr.gif'</span>,                       <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'grrr'</span>),
+<a name="l00038"></a>00038         <span class="stringliteral">':gulp:'</span>                =&gt;      array(<span class="stringliteral">'gulp.gif'</span>,                       <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'gulp'</span>),
+<a name="l00039"></a>00039         <span class="stringliteral">'8-/'</span>                   =&gt;      array(<span class="stringliteral">'ohoh.gif'</span>,                       <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'oh oh'</span>),
+<a name="l00040"></a>00040         <span class="stringliteral">':down:'</span>                =&gt;      array(<span class="stringliteral">'downer.gif'</span>,                     <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'downer'</span>),
+<a name="l00041"></a>00041         <span class="stringliteral">':red:'</span>                 =&gt;      array(<span class="stringliteral">'embarrassed.gif'</span>,        <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'red face'</span>),
+<a name="l00042"></a>00042         <span class="stringliteral">':sick:'</span>                =&gt;      array(<span class="stringliteral">'sick.gif'</span>,                       <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'sick'</span>),
+<a name="l00043"></a>00043         <span class="stringliteral">':shut:'</span>                =&gt;      array(<span class="stringliteral">'shuteye.gif'</span>,            <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'shut eye'</span>),
+<a name="l00044"></a>00044         <span class="stringliteral">':-/'</span>                   =&gt;      array(<span class="stringliteral">'hmm.gif'</span>,                        <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'hmmm'</span>),
+<a name="l00045"></a>00045         <span class="stringliteral">'&gt;:('</span>                   =&gt;      array(<span class="stringliteral">'mad.gif'</span>,                        <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'mad'</span>),
+<a name="l00046"></a>00046         <span class="stringliteral">':mad:'</span>                 =&gt;      array(<span class="stringliteral">'mad.gif'</span>,                        <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'mad'</span>),
+<a name="l00047"></a>00047         <span class="stringliteral">'&gt;:-('</span>                  =&gt;      array(<span class="stringliteral">'angry.gif'</span>,                      <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'angry'</span>),
+<a name="l00048"></a>00048         <span class="stringliteral">':angry:'</span>               =&gt;      array(<span class="stringliteral">'angry.gif'</span>,                      <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'angry'</span>),
+<a name="l00049"></a>00049         <span class="stringliteral">':zip:'</span>                 =&gt;      array(<span class="stringliteral">'zip.gif'</span>,                        <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'zipper'</span>),
+<a name="l00050"></a>00050         <span class="stringliteral">':kiss:'</span>                =&gt;      array(<span class="stringliteral">'kiss.gif'</span>,                       <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'kiss'</span>),
+<a name="l00051"></a>00051         <span class="stringliteral">':ahhh:'</span>                =&gt;      array(<span class="stringliteral">'shock.gif'</span>,                      <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'shock'</span>),
+<a name="l00052"></a>00052         <span class="stringliteral">':coolsmile:'</span>   =&gt;      array(<span class="stringliteral">'shade_smile.gif'</span>,        <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'cool smile'</span>),
+<a name="l00053"></a>00053         <span class="stringliteral">':coolsmirk:'</span>   =&gt;      array(<span class="stringliteral">'shade_smirk.gif'</span>,        <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'cool smirk'</span>),
+<a name="l00054"></a>00054         <span class="stringliteral">':coolgrin:'</span>    =&gt;      array(<span class="stringliteral">'shade_grin.gif'</span>,         <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'cool grin'</span>),
+<a name="l00055"></a>00055         <span class="stringliteral">':coolhmm:'</span>             =&gt;      array(<span class="stringliteral">'shade_hmm.gif'</span>,          <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'cool hmm'</span>),
+<a name="l00056"></a>00056         <span class="stringliteral">':coolmad:'</span>             =&gt;      array(<span class="stringliteral">'shade_mad.gif'</span>,          <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'cool mad'</span>),
+<a name="l00057"></a>00057         <span class="stringliteral">':coolcheese:'</span>  =&gt;      array(<span class="stringliteral">'shade_cheese.gif'</span>,       <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'cool cheese'</span>),
+<a name="l00058"></a>00058         <span class="stringliteral">':vampire:'</span>             =&gt;      array(<span class="stringliteral">'vampire.gif'</span>,            <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'vampire'</span>),
+<a name="l00059"></a>00059         <span class="stringliteral">':snake:'</span>               =&gt;      array(<span class="stringliteral">'snake.gif'</span>,                      <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'snake'</span>),
+<a name="l00060"></a>00060         <span class="stringliteral">':exclaim:'</span>             =&gt;      array(<span class="stringliteral">'exclaim.gif'</span>,            <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'excaim'</span>),
+<a name="l00061"></a>00061         <span class="stringliteral">':question:'</span>    =&gt;      array(<span class="stringliteral">'question.gif'</span>,           <span class="stringliteral">'19'</span>,   <span class="stringliteral">'19'</span>,   <span class="stringliteral">'question'</span>) <span class="comment">// no comma after last item</span>
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063                 );
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065 <span class="comment">/* End of file smileys.php */</span>
+<a name="l00066"></a>00066 <span class="comment">/* Location: ./system/application/config/smileys.php */</span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Gerado em Fri Sep 3 23:55:06 2010 para ta por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

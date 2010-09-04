@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>ta: /home/filipo/Projects/TIT/prototipos/0.1/ta/application/t/00_load.t.php Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Gerado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&nbsp;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;<u>S</u>earch&nbsp;for&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;ficheiros</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<h1>/home/filipo/Projects/TIT/prototipos/0.1/ta/application/t/00_load.t.php</h1><a href="00__load_8t_8php.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 &lt;?php
+<a name="l00097"></a>00097     require <span class="stringliteral">'../application/controllers/taonde.php'</span>;
+<a name="l00098"></a><a class="code" href="00__load_8t_8php.html#b61ce044fc298e2ee7a1811be5bb2bc7">00098</a>     <a class="code" href="00__load_8t_8php.html#b61ce044fc298e2ee7a1811be5bb2bc7">$taonde</a> = <span class="keyword">new</span> <a class="code" href="class_taonde.html" title="Cotrolador para buscas.">Taonde</a>();
+<a name="l00099"></a><a class="code" href="00__load_8t_8php.html#31daebf88fc668f410293e2c70cea3fc">00099</a>     <a class="code" href="00__load_8t_8php.html#31daebf88fc668f410293e2c70cea3fc">$test</a> = <a class="code" href="00__load_8t_8php.html#b61ce044fc298e2ee7a1811be5bb2bc7">$taonde</a>-&gt;router-&gt;method;
+<a name="l00100"></a><a class="code" href="00__load_8t_8php.html#cc16c08938e8bd9826869795d8d36f81">00100</a>     <a class="code" href="00__load_8t_8php.html#cc16c08938e8bd9826869795d8d36f81">$expected_result</a> = <span class="stringliteral">'tests'</span>;
+<a name="l00101"></a><a class="code" href="00__load_8t_8php.html#a3be3c5c1fc846612bea6e7f30937212">00101</a>     <a class="code" href="00__load_8t_8php.html#a3be3c5c1fc846612bea6e7f30937212">$test_name</a> = <span class="stringliteral">'Pode usar o controle /taonde'</span>;
+<a name="l00102"></a><a class="code" href="00__load_8t_8php.html#51b7fe0290aa48b405d897f947ec6a94">00102</a>     $this-&gt;<a class="code" href="00__load_8t_8php.html#51b7fe0290aa48b405d897f947ec6a94">tests</a>[] = $this-&gt;unit-&gt;run(<a class="code" href="00__load_8t_8php.html#31daebf88fc668f410293e2c70cea3fc">$test</a>, 
+<a name="l00103"></a>00103                   <a class="code" href="00__load_8t_8php.html#cc16c08938e8bd9826869795d8d36f81">$expected_result</a>, 
+<a name="l00104"></a>00104                   <a class="code" href="00__load_8t_8php.html#a3be3c5c1fc846612bea6e7f30937212">$test_name</a>);
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106 
+<a name="l00117"></a>00117     <a class="code" href="00__load_8t_8php.html#31daebf88fc668f410293e2c70cea3fc">$test</a> = <a class="code" href="00__load_8t_8php.html#b61ce044fc298e2ee7a1811be5bb2bc7">$taonde</a>-&gt;restaurantes(<span class="stringliteral">'Brasil'</span>);
+<a name="l00118"></a>00118     <a class="code" href="00__load_8t_8php.html#cc16c08938e8bd9826869795d8d36f81">$expected_result</a> = <span class="stringliteral">'comer Brasil'</span>;
+<a name="l00119"></a>00119     <a class="code" href="00__load_8t_8php.html#a3be3c5c1fc846612bea6e7f30937212">$test_name</a> = <span class="stringliteral">'Pode usar o metodo /taonde/restaurantes'</span>;
+<a name="l00120"></a>00120     $this-&gt;<a class="code" href="00__load_8t_8php.html#51b7fe0290aa48b405d897f947ec6a94">tests</a>[] = $this-&gt;unit-&gt;run(<a class="code" href="00__load_8t_8php.html#31daebf88fc668f410293e2c70cea3fc">$test</a>, 
+<a name="l00121"></a>00121                           <a class="code" href="00__load_8t_8php.html#cc16c08938e8bd9826869795d8d36f81">$expected_result</a>, 
+<a name="l00122"></a>00122                           <a class="code" href="00__load_8t_8php.html#a3be3c5c1fc846612bea6e7f30937212">$test_name</a>);
+<a name="l00123"></a>00123  
+<a name="l00132"></a>00132     <a class="code" href="00__load_8t_8php.html#31daebf88fc668f410293e2c70cea3fc">$test</a> = <a class="code" href="00__load_8t_8php.html#b61ce044fc298e2ee7a1811be5bb2bc7">$taonde</a>-&gt;taqui(<span class="stringliteral">'Brasil'</span>);
+<a name="l00133"></a>00133     <a class="code" href="00__load_8t_8php.html#cc16c08938e8bd9826869795d8d36f81">$expected_result</a> = <span class="stringliteral">'buscar Brasil'</span>;
+<a name="l00134"></a>00134     <a class="code" href="00__load_8t_8php.html#a3be3c5c1fc846612bea6e7f30937212">$test_name</a> = <span class="stringliteral">'Pode usar o metodo /taonde/taqui'</span>;
+<a name="l00135"></a>00135     $this-&gt;<a class="code" href="00__load_8t_8php.html#51b7fe0290aa48b405d897f947ec6a94">tests</a>[] = $this-&gt;unit-&gt;run(<a class="code" href="00__load_8t_8php.html#31daebf88fc668f410293e2c70cea3fc">$test</a>, 
+<a name="l00136"></a>00136                           <a class="code" href="00__load_8t_8php.html#cc16c08938e8bd9826869795d8d36f81">$expected_result</a>, 
+<a name="l00137"></a>00137                           <a class="code" href="00__load_8t_8php.html#a3be3c5c1fc846612bea6e7f30937212">$test_name</a>);
+<a name="l00138"></a>00138  
+<a name="l00159"></a>00159     require <span class="stringliteral">'../application/controllers/admin.php'</span>;
+<a name="l00160"></a><a class="code" href="00__load_8t_8php.html#d3b3c64b25fbbb6aec24407e4333aa71">00160</a>     <a class="code" href="00__load_8t_8php.html#d3b3c64b25fbbb6aec24407e4333aa71">$admin</a> = <span class="keyword">new</span> <a class="code" href="class_admin.html" title="Cotrolador para.">Admin</a>();
+<a name="l00161"></a>00161     <a class="code" href="00__load_8t_8php.html#31daebf88fc668f410293e2c70cea3fc">$test</a> = <a class="code" href="00__load_8t_8php.html#d3b3c64b25fbbb6aec24407e4333aa71">$admin</a>-&gt;router-&gt;method;
+<a name="l00162"></a>00162     <a class="code" href="00__load_8t_8php.html#cc16c08938e8bd9826869795d8d36f81">$expected_result</a> = <span class="stringliteral">'tests'</span>;
+<a name="l00163"></a>00163     <a class="code" href="00__load_8t_8php.html#a3be3c5c1fc846612bea6e7f30937212">$test_name</a> = <span class="stringliteral">'Pode usar o controle /admin'</span>;
+<a name="l00164"></a>00164     $this-&gt;<a class="code" href="00__load_8t_8php.html#51b7fe0290aa48b405d897f947ec6a94">tests</a>[] = $this-&gt;unit-&gt;run(<a class="code" href="00__load_8t_8php.html#31daebf88fc668f410293e2c70cea3fc">$test</a>, 
+<a name="l00165"></a>00165                           <a class="code" href="00__load_8t_8php.html#cc16c08938e8bd9826869795d8d36f81">$expected_result</a>, 
+<a name="l00166"></a>00166                           <a class="code" href="00__load_8t_8php.html#a3be3c5c1fc846612bea6e7f30937212">$test_name</a>);
+<a name="l00167"></a>00167  
+<a name="l00168"></a>00168 ?&gt;
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Gerado em Fri Sep 3 23:55:06 2010 para ta por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>
